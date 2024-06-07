@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0">
+  <resources minRequiredRevision="1.0" />
+  <categories>
+    <category name="CustomRDPSettings" displayName="Custom RDP Settings" />
+  </categories>
+  <policies>
+    <policy name="RequireRdpSecurityLayer" class="Machine" displayName="Require RDP security layer" explainText="This policy setting specifies whether to require the use of a specific security layer for Remote (RDP) connections." key="SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services" valueName="SecurityLayer">
+      <parentCategory ref="CustomRDPSettings" />
+      <supportedOn />
+      <elements>
+        <enum id="SecurityLayer" required="false">
+          <item displayName="RDP">
+            <value>
+              <decimal value="2" />
+            </value>
+          </item>
+        </enum>
+      </elements>
+    </policy>
+  </policies>
+</policyDefinitions>

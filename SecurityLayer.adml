@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<policyDefinitionResources xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/GroupPolicy/2006/07/PolicyDefinitions" revision="1.0">
+  <displayName>Custom RDP Settings</displayName>
+  <description>Custom RDP settings for group policy</description>
+  <policyDefinitions>
+    <policyDefinition name="RequireRdpSecurityLayer">
+      <displayName>Require RDP security layer</displayName>
+      <description>Specifies whether to require the use of a specific security layer for Remote (RDP) connections.</description>
+      <items>
+        <item id="SecurityLayer">
+          <displayName>Security Layer</displayName>
+        </item>
+      </items>
+    </policyDefinition>
+  </policyDefinitions>
+</policyDefinitionResources>
