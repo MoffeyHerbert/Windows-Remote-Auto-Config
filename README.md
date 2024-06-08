@@ -7,6 +7,7 @@
   <a href="https://app.codacy.com/gh/MoffeyHerbert/Windows-Remote-Auto-Config/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade"><img src="https://app.codacy.com/project/badge/Grade/4def4177c669417f9dd0b3ebd0ce170f"/></a>
   <img alt="GitHub Release" src="https://img.shields.io/github/v/release/MoffeyHerbert/Windows-Remote-Auto-Config">
   <img src="https://img.shields.io/github/stars/MoffeyHerbert/Windows-Remote-Auto-Config?style=social">
+  <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/MoffeyHerbert/Windows-Remote-Auto-Config">
 </div>
 
 
