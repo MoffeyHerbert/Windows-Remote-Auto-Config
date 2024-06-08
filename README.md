@@ -1,5 +1,5 @@
 <div align="center">
-  <h1 align="center">基于 Windows 远程自动配置脚本</h1>
+  <h1 align="center">基于 Windows 的远程自动配置脚本</h1>
   
   一个基于 Windows 的计算机远程配置脚本，用于设置和配置远程桌面服务及相关系统设置。
 
