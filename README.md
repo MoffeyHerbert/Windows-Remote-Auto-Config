@@ -1,8 +1,16 @@
-# Windows远程自动配置脚本
+<div align="center">
+  <h1 align="center">基于 Windows 远程自动配置脚本</h1>
+  
+  一个基于 Windows 的计算机远程配置脚本，用于设置和配置远程桌面服务及相关系统设置。
 
-## 项目简介
-一个计算机远程配置脚本，用于设置和配置远程桌面服务及相关系统设置。此脚本包括以下功能：
+  <a href="https://www.gnu.org/licenses/gpl-3.0.html#license-text"><img src="https://img.shields.io/github/license/MoffeyHerbert/Windows-Remote-Auto-Config?color=%231890FF" alt="License: GPL v3"></a>
+  <a href="https://app.codacy.com/gh/MoffeyHerbert/Windows-Remote-Auto-Config/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade"><img src="https://app.codacy.com/project/badge/Grade/4def4177c669417f9dd0b3ebd0ce170f"/></a>
+  <img alt="GitHub Release" src="https://img.shields.io/github/v/release/MoffeyHerbert/Windows-Remote-Auto-Config">
+  <img src="https://img.shields.io/github/stars/MoffeyHerbert/Windows-Remote-Auto-Config?style=social">
+</div>
 
+
+## 功能
 1. 检查并提升为管理员权限
 2. 注册表备份和恢复
 3. 修改服务启动类型和状态
@@ -15,7 +23,7 @@
 10. 更新本地组策略和检查远程端口
 11. 支持操作系统版本检测和条件执行
 
-## 项目使用约定：
+## 项目使用约定
 本项目基于 GPL 3.0 协议开源，不禁止二次分发，但使用代码时请遵守如下规则：
 
 1. 二次分发版必须同样遵循 GPL 3.0 协议，**开源且免费**。
