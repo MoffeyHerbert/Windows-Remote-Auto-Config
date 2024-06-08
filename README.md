@@ -1,5 +1,7 @@
 # Windows远程自动配置脚本
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9317bf4f1cbb4008a18dab9a65273d02)](https://app.codacy.com/gh/MoffeyHerbert/Windows-Remote-Auto-Config?utm_source=github.com&utm_medium=referral&utm_content=MoffeyHerbert/Windows-Remote-Auto-Config&utm_campaign=Badge_Grade)
+
 ## 项目简介
 一个计算机远程配置脚本，用于设置和配置远程桌面服务及相关系统设置。此脚本包括以下功能：
 
