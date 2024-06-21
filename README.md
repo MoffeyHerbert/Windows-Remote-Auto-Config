@@ -1,8 +1,17 @@
-# Windows远程自动配置脚本
+<div align="center">
+  <h1 align="center">基于 Windows 的远程自动配置脚本</h1>
+  
+  一个基于 Windows 的计算机远程配置脚本，用于设置和配置远程桌面服务及相关系统设置。
 
-## 项目简介
-一个计算机远程配置脚本，用于设置和配置远程桌面服务及相关系统设置。此脚本包括以下功能：
+  <a href="https://www.gnu.org/licenses/gpl-3.0.html#license-text"><img src="https://img.shields.io/github/license/MoffeyHerbert/Windows-Remote-Auto-Config?color=%231890FF" alt="License: GPL v3"></a>
+  <a href="https://app.codacy.com/gh/MoffeyHerbert/Windows-Remote-Auto-Config/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade"><img src="https://app.codacy.com/project/badge/Grade/4def4177c669417f9dd0b3ebd0ce170f"/></a>
+  <img alt="GitHub Release" src="https://img.shields.io/github/v/release/MoffeyHerbert/Windows-Remote-Auto-Config">
+  <img src="https://img.shields.io/github/stars/MoffeyHerbert/Windows-Remote-Auto-Config?style=social">
+  <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/MoffeyHerbert/Windows-Remote-Auto-Config">
+</div>
 
+
+## 功能
 1. 检查并提升为管理员权限
 2. 注册表备份和恢复
 3. 修改服务启动类型和状态
@@ -15,7 +24,7 @@
 10. 更新本地组策略和检查远程端口
 11. 支持操作系统版本检测和条件执行
 
-## 项目使用约定：
+## 项目使用约定
 本项目基于 GPL 3.0 协议开源，不禁止二次分发，但使用代码时请遵守如下规则：
 
 1. 二次分发版必须同样遵循 GPL 3.0 协议，**开源且免费**。
@@ -107,7 +116,9 @@ Subinacl是微软提供的用于对文件、注册表、服务等对象进行权
 ## 使用方法
 1. 确保 `ntrights.exe` 工具在脚本运行的路径中，或者修改脚本以指向正确的路径。
 2. 确保 `subinacl.exe` 工具在脚本运行的路径中，或者修改脚本以指向正确的路径。
-3. 将脚本保存为 **ANSI** 编码格式的 `.bat` 文件，右键点击以管理员身份运行。
+3. **版本1.5以前**：将脚本保存为 **ANSI** 编码格式的 `.bat` 文件，右键点击以管理员身份运行。
+4. **版本1.6新增**：新增打包后的自解压exe文件，用户仅需运行自解压文件即可完成配置。
+
 
 ## 注意事项
 - 需要以管理员身份运行脚本。
