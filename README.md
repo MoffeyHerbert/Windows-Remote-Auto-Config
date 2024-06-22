@@ -10,6 +10,8 @@
   <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/MoffeyHerbert/Windows-Remote-Auto-Config">
 </div>
 
+![运行截图](picture/2024-06-22_124606.png)
+
 
 ## 目录
 - [功能](#功能)
@@ -66,11 +68,11 @@
 
 ### 2. 注册表备份
 - 导出以下注册表项：
-  - `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services`
-  - `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization`
-  - `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server`
-  - `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Remote Assistance`
-- 注释掉了还原注册表的命令，可以根据需要取消注释。
+  - `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows NT\Terminal Services` -> `CombinedBackup.reg`
+  - `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Personalization` -> `PersonalizationBackup.reg`
+  - `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server` -> `TerminalServerBackup.reg`
+  - `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Remote Assistance` -> `RemoteAssistanceBackup.reg`
+- 注释了还原注册表的命令，可以根据需要取消注释，但需要重新保存为ANSI文件。
 
 ### 3. 修改服务
 - 将 `SessionEnv`、`TermService` 和 `UmRdpService` 服务的启动类型设置为“自动”。
@@ -152,7 +154,7 @@ Subinacl是微软提供的用于对文件、注册表、服务等对象进行权
 1. 确保 `ntrights.exe` 工具在脚本运行的路径中，或者修改脚本以指向正确的路径。
 2. 确保 `subinacl.exe` 工具在脚本运行的路径中，或者修改脚本以指向正确的路径。
 3. **版本1.5以前**：将脚本保存为 **ANSI** 编码格式的 `.bat` 文件，右键点击以管理员身份运行。
-4. **版本1.6新增**：新增打包后的自解压exe文件，用户仅需运行自解压文件即可完成配置，默认解压路径：`./Desktop/Windows-Remote-Auto-Config`。
+4. **版本1.6新增**：新增打包后的自解压exe文件，用户仅需运行自解压文件即可完成配置，默认解压文件到当前自解压文件所在路径的`./Windows-Remote-Auto-Config`目录。
 
 
 ## 注意事项
