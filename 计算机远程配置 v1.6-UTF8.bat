@@ -2,7 +2,7 @@
 color 0a
 :: 启用延迟展开模式，允许使用动态变量
 setlocal ENABLEDELAYEDEXPANSION
-title 计算机远程配置脚本
+title 计算机远程配置脚本 v1.6
 :: 打印当前脚本文件夹文件结构
 cd /D "%~dp0"
 tree /F
@@ -154,7 +154,6 @@ goto verify
 
 
 :WindowsXP
-:: 程序未验证
 :: ------------------------------------------------------------------------------------------------------------------------
 :: 1. 启动服务："Remote Desktop Help Session Manager" 和 "Telnet"
 :: 1.1 设置服务启动类型为“自动”
